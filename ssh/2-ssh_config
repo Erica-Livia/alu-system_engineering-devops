@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+#Configuring a remote host to accept connections without password
 Include /etc/ssh/ssh_config.d/*.conf
 
 Host *
