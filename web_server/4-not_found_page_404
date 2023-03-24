@@ -22,5 +22,16 @@ config=\
 }
 "
 echo "Holberton School" | sudo tee /var/www/html/index.html
+
+echo "<!DOCTYPE html>
+<html>
+<head>
+  <title>404 Not Found</title>
+</head>
+<body>
+  <h1>404 Not Found</h1>
+  <p>Ceci n'est pas une page</p>
+</body>
+</html>"
 echo "$config" | sudo tee /etc/nginx/sites-available/default
 sudo service nginx restart
